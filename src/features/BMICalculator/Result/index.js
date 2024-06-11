@@ -1,15 +1,19 @@
+import { StyledResult } from "./styled";
+
 const Result = ({ result }) => {
   return (
-    <p>
+    <StyledResult>
       Twoje BMI:{" "}
-      {result !== undefined && (
-        <>
-          {result.height}
-          {result.weight}
-          {result.bmi}
-        </>
-      )}
-    </p>
+      <strong>
+        {result !== undefined && (
+          <>
+            {result.height}
+            {result.weight}
+            {result.bmi.toFixed(4)}
+          </>
+        )}
+      </strong>
+    </StyledResult>
   );
 };
 export default Result;
