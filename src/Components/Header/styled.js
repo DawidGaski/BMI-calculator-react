@@ -6,6 +6,7 @@ export const Header = styled.header`
   border-radius: 8px;
   background: ${({ theme }) => theme.color.thunderBird};
   color: ${({ theme }) => theme.color.white};
+  box-shadow: 1px 0px 1px 2px ${({ theme }) => theme.color.fiord};
 `;
 
 export const Headline = styled.h1`
