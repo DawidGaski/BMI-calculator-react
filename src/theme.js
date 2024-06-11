@@ -6,4 +6,7 @@ export const theme = {
     concrete: "#F2F2F2",
     fiord: "#4C5270",
   },
+  breakpoint: {
+    mobileMax: 767,
+  },
 };

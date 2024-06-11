@@ -8,4 +8,9 @@ export const Container = styled.div`
   display: grid;
   grid-template-rows: auto auto;
   justify-content: center;
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    margin: 2px;
+    padding: 10px;
+    border-radius: 12px;
+  }
 `;

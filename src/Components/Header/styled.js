@@ -9,6 +9,10 @@ export const Header = styled.header`
   background: ${({ theme }) => theme.color.thunderBird};
   color: ${({ theme }) => theme.color.white};
   box-shadow: 1px 0px 10px 3px ${({ theme }) => theme.color.fiord};
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    padding: 16px;
+    border-radius: 6px;
+  }
 `;
 
 export const Headline = styled.h1`
@@ -16,4 +20,10 @@ export const Headline = styled.h1`
   margin-top: 32px;
   margin-bottom: 32px;
   border-radius: 12px;
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    font-size: 32px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+  }
 `;

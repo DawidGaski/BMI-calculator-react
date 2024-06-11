@@ -6,11 +6,19 @@ export const Form = styled.form`
   border: solid 2px ${({ theme }) => theme.color.thunderBird};
   display: flex;
   flex-direction: column;
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    padding: 4px 8px;
+    border-radius: 5px;
+  }
 `;
 
 export const Paragraph = styled.p`
   margin: 16px;
   font-size: 24px;
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    font-size: 12px;
+    margin: 8px;
+  }
 `;
 
 export const Input = styled.input`
@@ -18,6 +26,9 @@ export const Input = styled.input`
   display: flex;
   justify-content: center;
   align-items: stretch;
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    font-size: 12px;
+  }
 `;
 
 export const Button = styled.button`
@@ -27,4 +38,9 @@ export const Button = styled.button`
   border: solid 2px ${({ theme }) => theme.color.white};
   color: ${({ theme }) => theme.color.white};
   background: ${({ theme }) => theme.color.thunderBird};
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+  }
 `;
