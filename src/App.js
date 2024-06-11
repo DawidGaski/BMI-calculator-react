@@ -1,8 +1,7 @@
-import { Container } from "./Components/Container";
-import { End, Result } from "./Components/End";
-import { Header, Headline } from "./Components/Header";
-import { Section } from "./Components/Section";
-import Form from "./features/BMICalculator";
+import { Container } from "./Components/Container/styled";
+import { Header, Headline } from "./Components/Header/styled";
+import { Section } from "./Components/Section/styled";
+import BmiCalculator from "./features/BMICalculator";
 
 function App() {
   return (
@@ -11,11 +10,8 @@ function App() {
         <Headline>Kalkulator BMI</Headline>
       </Header>
       <Section>
-        <Form />
+        <BmiCalculator />
       </Section>
-      <End>
-        <Result>25.90</Result>
-      </End>
     </Container>
   );
 }
