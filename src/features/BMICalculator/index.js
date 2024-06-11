@@ -27,7 +27,7 @@ const BmiCalculator = () => {
         {" "}
         WZROST:
         <Input
-          placeholder="wpisz swój wzrost"
+          placeholder="wpisz swój wzrost w cm"
           onChange={({ target }) => setHeight(target.value)}
           type="number"
           step="0.5"
@@ -38,7 +38,7 @@ const BmiCalculator = () => {
         {" "}
         WAGA:
         <Input
-          placeholder="wpisz swoją wagę"
+          placeholder="wpisz swoją wagę w kg"
           onChange={({ target }) => setWeight(target.value)}
           type="number"
           step="0.1"

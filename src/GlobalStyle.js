@@ -11,5 +11,6 @@ html {
 
 body {
   padding: 16px;
+  background: ${({ theme }) => theme.color.concrete};
 }
 `;
