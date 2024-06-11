@@ -2,12 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   max-width: 1216px;
+  margin: 2px;
+  padding: 10px;
   border-radius: 12px;
   background: ${({ theme }) => theme.color.concrete};
   display: grid;
-  grid-gap: 20px;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
   justify-content: center;
-  align-items: center;
-  justify-items: stretch;
 `;
