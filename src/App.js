@@ -2,6 +2,7 @@ import { Container } from "./Components/Container";
 import { End, Result } from "./Components/End";
 import { Header, Headline } from "./Components/Header";
 import { Section } from "./Components/Section";
+import Form from "./features/BMICalculator";
 
 function App() {
   return (
@@ -9,7 +10,9 @@ function App() {
       <Header>
         <Headline>Kalkulator BMI</Headline>
       </Header>
-      <Section>Tu będzie Kalkulator</Section>
+      <Section>
+        <Form />
+      </Section>
       <End>
         <Result>25.90</Result>
       </End>
