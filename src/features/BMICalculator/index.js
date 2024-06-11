@@ -1,7 +1,8 @@
 import { useState } from "react";
 import Result from "./Result";
+import { Button, Form, Input, Paragraph } from "./styled";
 
-const Form = () => {
+const BmiCalculator = () => {
   const [result, setResult] = useState();
 
   const calculateResult = (weight, height) => {
@@ -21,29 +22,29 @@ const Form = () => {
   };
 
   return (
-    <form onSubmit={onFormSubmit}>
-      <fieldset>
-        <p>
-          <label>
-            {" "}
-            Wpisz swój wzrost
-            <input onChange={({ target }) => setHeight(target.value)}></input>
-          </label>
-        </p>
-        <p>
-          <label>
-            {" "}
-            wpisz swoją wagę
-            <input onChange={({ target }) => setWeight(target.value)}></input>
-          </label>
-        </p>
-        <p>
-          <button>Przelicz</button>
-        </p>
-      </fieldset>
+    <Form onSubmit={onFormSubmit}>
+      <Paragraph>
+        {" "}
+        WZROST:
+        <Input
+          placeholder="wpisz swój wzrost"
+          onChange={({ target }) => setHeight(target.value)}
+        ></Input>
+      </Paragraph>
+      <Paragraph>
+        {" "}
+        WAGA:
+        <Input
+          placeholder="wpisz swoją wagę"
+          onChange={({ target }) => setWeight(target.value)}
+        ></Input>
+      </Paragraph>
+      <Paragraph>
+        <Button>Przelicz</Button>
+      </Paragraph>
       <Result result={result} />
-    </form>
+    </Form>
   );
 };
 
-export default Form;
+export default BmiCalculator;
