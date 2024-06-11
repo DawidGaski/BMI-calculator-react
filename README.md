@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# BMI Calculator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+
+Simple app to count your BMI
+
+## Demo
+
+https://dawidgaski.github.io/bmi-calculator-react/
 
 ## Available Scripts
 
