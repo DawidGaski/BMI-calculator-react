@@ -13,5 +13,7 @@ export const Section = styled.section`
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     padding: 10px;
     border-radius: 6px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
   }
 `;

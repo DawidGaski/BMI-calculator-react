@@ -12,6 +12,8 @@ export const Header = styled.header`
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     padding: 16px;
     border-radius: 6px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
 `;
 
