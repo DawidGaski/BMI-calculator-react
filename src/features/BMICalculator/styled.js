@@ -44,3 +44,12 @@ export const Button = styled.button`
     border-radius: 5px;
   }
 `;
+
+export const Result = styled.div`
+  width: 320px;
+  height: 160px;
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    width: 160px;
+    height: 60px;
+  }
+`;
