@@ -50,6 +50,6 @@ export const Result = styled.div`
   height: 160px;
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
     width: 160px;
-    height: 60px;
+    height: 80px;
   }
 `;
