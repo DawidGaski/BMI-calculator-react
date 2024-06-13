@@ -26,7 +26,7 @@ const BmiCalculator = () => {
       } else if (result >= W2 && result < W3) {
         setInfo("Wynik wskazuje na nadwagę");
       } else if (result >= W3) {
-        setInfo("Wynik wskazuje na otyłośc");
+        setInfo("Wynik wskazuje na otyłość");
       }
     }
   }, [result]);

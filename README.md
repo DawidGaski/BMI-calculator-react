@@ -2,11 +2,27 @@
 
 ## Description
 
-Simple app to count your BMI
+Simple app to count your BMI.
+
+[![Animation-BMICalculator.gif](https://i.postimg.cc/XJFSywXX/Animation-BMICalculator.gif)](https://postimg.cc/G8cSWTF1)
 
 ## Demo
 
 https://dawidgaski.github.io/bmi-calculator-react/
+
+## Technologies
+
+- HTML
+- CSS
+- BEM Convention
+- Grid
+- JavaScript
+- React JS
+- Redux
+- Create React App (Webpack, Babel, ESLint, PostCSS, CSS Loader & Style Loader)
+- Media Queries
+- Styled Components
+- Provider
 
 ## Available Scripts
 
